@@ -1,0 +1,27 @@
+[gd_scene load_steps=7 format=3 uid="uid://dk3c2hpxunvui"]
+
+[ext_resource type="Script" uid="uid://c1ch88ntjuceq" path="res://skripte/druga_scena.gd" id="1_cl856"]
+[ext_resource type="PackedScene" uid="uid://cxpo5hrnrr7qj" path="res://scene/textbox.tscn" id="2_gxjsr"]
+[ext_resource type="Script" uid="uid://cyrugcjth4nil" path="res://skripte/cheda_pricalica.gd" id="3_bdj7f"]
+[ext_resource type="Texture2D" uid="uid://drpds7164i5o2" path="res://slike/cheda1.png" id="4_o7tmi"]
+[ext_resource type="Texture2D" uid="uid://cbw4fbc8yyon8" path="res://slike/cheda2.png" id="5_an2mn"]
+[ext_resource type="PackedScene" uid="uid://c2uyegaainhql" path="res://scene/sprite_2d.tscn" id="6_53npc"]
+
+[node name="druga_scena" type="Node2D"]
+script = ExtResource("1_cl856")
+
+[node name="textbox" parent="." instance=ExtResource("2_gxjsr")]
+
+[node name="cheda_pricalica" type="Node2D" parent="."]
+visible = false
+top_level = true
+position = Vector2(94, 500)
+script = ExtResource("3_bdj7f")
+closed_mouth_texture = ExtResource("4_o7tmi")
+open_mouth_texture = ExtResource("5_an2mn")
+
+[node name="glava" type="Sprite2D" parent="cheda_pricalica"]
+
+[node name="usta_tajmer" type="Timer" parent="cheda_pricalica"]
+
+[node name="pozadina" parent="." instance=ExtResource("6_53npc")]
