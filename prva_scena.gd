@@ -1,6 +1,6 @@
 extends Node2D
 
-var tekstic = "ejou, imam drogetine alooooooo ej ej ejjjj droooogaaaaaaaaaa\ndrogica :3"
+var tekstic = "`ejou, imam drogetine alooooooo ej ej ejjjj droooogaaaaaaaaaa\ndrogica :3"
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
